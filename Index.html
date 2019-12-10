@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ES">
+<head>
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<meta charset="utf-8">
+	<title>MI06B</title>
+</head>
+<body>
+	<h1 id="Headers"></h1>
+	<canvas id="Lienzo" width="300" height="300">
+	</canvas>
+	<script type="text/javascript">
+		var Hora = new Date();
+
+		var Elemento = document.getElementById('Lienzo');
+		var Contexto = Elemento.getContext('2d');
+		Contexto.font = "25px Arial";
+		Contexto.fillStyle = "#FF33FF";
+		Contexto.fillText("MI06B",100,100);
+
+		var e = document.getElementById('Headers');
+		e.innerHTML= Hora;
+   </script>
+
+
+</body>
+</html>
